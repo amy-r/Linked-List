@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   border-collapse: collapse;
+  position: relative;
 }
 
 .main-form {
@@ -15,6 +16,9 @@ body {
   height: 100%;
   margin: 0;
   width: 50%;
+  position: absolute;
+  /*left: 0;
+  top: 0;*/
 }
 
 .title-form {
@@ -68,8 +72,11 @@ color: #C5C7C9;
   display: inline-block;
   height: 100%;
   width: 50%;
-  margin: 0;
+  /*x*/
   vertical-align: top;
+  position: absolute;
+  left: 50%;
+  top: 0;
 }
 
 .bookmark-card {
