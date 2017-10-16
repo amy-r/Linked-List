@@ -1,0 +1,84 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+}
+
+.main-form {
+  background-color: #455A64;
+  border-collapse: collapse;
+  display: inline-block;
+  height: 100%;
+  margin: 0;
+  width: 50%;
+}
+
+.title-form {
+  text-align: center; 
+  padding-top: 35%;
+  padding-bottom: 35%;
+}
+
+h1 {
+  color: #FFFFFF;
+  font-size: 300%;
+  font-weight: 800;
+  margin:0;
+}
+
+img {
+  width: 100px;
+  height: auto;
+}
+
+input {
+  display: block;
+  width: 80%;
+  margin: 5% auto 0 auto;
+}
+
+input[type="text"]{
+  font-size: 120%;
+  font-weight: 400;
+}
+
+input::placeholder {
+color: #C5C7C9; 
+}
+
+.enter {
+  background-color: #FFC107;
+  border-style: none;
+  color: #FFFFFF;
+  font-size: 100%;
+  font-weight: 800;
+}
+
+.enter:hover {
+  background-color: #FFD773;
+}
+
+.bookmark-list {
+  background-color: #CFD8DC;
+  border-collapse: collapse;
+  display: inline-block;
+  height: 100%;
+  width: 50%;
+  margin: 0;
+  vertical-align: top;
+}
+
+.bookmark-card {
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-color: #455A64;
+  color: #455A64;
+  height: auto;
+  margin: 5% 5% 0% 5%;
+  padding: 0% 4% 0% 4%;
+  width: auto;
+}
