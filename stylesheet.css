@@ -89,3 +89,11 @@ color: #C5C7C9;
   padding: 0% 4% 0% 4%;
   width: auto;
 }
+.read {
+  float: left;
+
+}
+
+.delete {
+  float: right;
+}

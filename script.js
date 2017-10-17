@@ -49,8 +49,8 @@ with a function that clears all of the read bookmarks.
 // variables
 var enterButton = document.querySelector('.enter');
 var bookmarkList = document.querySelector('.bookmark-list');
-var title = document.querySelector('#website-title');
-var url = document.querySelector('#website-url');
+var title = document.querySelector('.website-title');
+var url = document.querySelector('.website-url');
 
 
 // event listeners
@@ -64,31 +64,39 @@ function userInput(event) {
   console.log(websiteTitle)
   var websiteUrl = document.querySelector('.website-url').value;
   console.log(websiteUrl)
-  Bookmark[title, url];
+  var card = new Bookmark(websiteTitle, websiteUrl);
+    console.log (card)
   console.log('negative nancy')
-
+  bookmarkList.innerHTML+=(makeCard(card));
+}
+// += adds on to what you already have in there!
 function Bookmark(title, url) { 
     this.title = title;
     this.url = url;
     console.log('made a bookmark');
-    title = title.value;
-    url = url.value;
-    var newBookmark = title.createElement('.bookmark-card');
-    console.log('yippee')
-    var newContent = url.createTextNode();
-    console.log('woah')
+    // title = title.value;
+    // url = url.value;
+    // var newBookmark = title.createElement('.bookmark-card');
+    // console.log('yippee')
+    // var newContent = url.createTextNode();
+    // console.log('woah')
   }
-  // bookmarkList.appendChild(`<article class="bookmark-card">
-  //     <h2 class="website-title">` + websiteTitle + `</h2>
-  //     <hr>
-  //     <p class="url">` + websiteUrl + `</p>
-  //     <hr>
-  //     <button class="read"></button>
-  //     <button class="delete"></button>
-  //   </article>`)
-  // }
-  
 
+  function makeCard(completedCard) {
+    var newTitle = completedCard.title;
+    var newUrl = completedCard.url;
+    console.log (newUrl)
+    return (`<article class="bookmark-card">
+      <h2 class="website-title">${newTitle}</h2>
+      <hr>
+      <p class="url">${newUrl}</p>
+      <hr>
+      <button class="read">Read</button>
+      <button class="delete">Delete</button>
+    </article>`)
+  }
+  
+  
 
 
 // methods
