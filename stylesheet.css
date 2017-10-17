@@ -91,9 +91,13 @@ color: #C5C7C9;
 }
 .read {
   float: left;
-
+  color: #455A64;
 }
 
 .delete {
+  color: #455A64;
   float: right;
+
+
+
 }

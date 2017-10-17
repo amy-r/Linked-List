@@ -89,35 +89,36 @@ function Bookmark(title, url) {
     return (`<article class="bookmark-card">
       <h2 class="website-title">${newTitle}</h2>
       <hr>
-      <p class="url">${newUrl}</p>
+      <a class="url" href="${newUrl}">${newUrl}</a>
       <hr>
       <button class="read">Read</button>
       <button class="delete">Delete</button>
     </article>`)
   }
-  
-  
+ 
+ document.querySelector(".bookmark-list").addEventListener('click',function() {
+ this.target
+});
+// give id to the article. h5 onClick= ''
+ // checkValidity function- 
 
 
 // methods
+// 
+
+// formValidity
+// make a target for a click
 
 
-
-
+// Date.now= a given js that creates a time stamp
+// make read and delete
 
 
 
 
 
 // functions
-// function addBookmark () {
-//   if (input === requiredFields);
-//     userInput.innerText = savedBookmarks
-//     //know this isn't correct language, just general idea
-//   else {
-//     userInput.innerText =
-//   } 
-//   }
+// 
 // function makeLink(argument) {
 
 // prepend to change input to a link
