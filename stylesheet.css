@@ -85,6 +85,8 @@ color: #C5C7C9;
   position: absolute;
   left: 50%;
   top: 0;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 .bookmark-card {
