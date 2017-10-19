@@ -56,6 +56,10 @@ input[type="text"], input[type="url"] {
   font-weight: 400;
 }
 
+input[type="text"], input[type="url"], input[type="submit"]:focus {
+  outline:0;
+}
+
 input::placeholder {
   color: #C5C7C9; 
 }
@@ -180,6 +184,20 @@ input::placeholder {
   color: #FFC107;
 }
 
+.logo{
+  margin: auto;
+}
+
+@media (max-width: 800px) {
+ img {
+  width: 50px;
+  height: auto;
+ } 
+
+ h1 {
+  font-size: 200%;
+ }
+} 
 @media (max-width: 480px) {
 
   .bookmark-list, .main-form{
@@ -189,33 +207,39 @@ input::placeholder {
     right: 0;
     left: 0;
   }
+
   .read-unread-text{
     text-align: center;
     padding: 0;
     display: block;
-
   }
+
   .bookmark-counter-text{
     text-align: center;
     padding: 0;
   }
+
   .counter{
     margin: auto;
     max-width: 90%;
   }
+
   h1 {
     font-size: 200%;
   }
 
- /* img{
+  img{
     width: 10%;
     height: auto;
   }
+
   .main-form{
     max-height: 50%;
   }
+
   .title-form{
     padding-top: 3%;
-  }*/
+  }
+  
 }
 
