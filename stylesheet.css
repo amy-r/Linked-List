@@ -15,6 +15,7 @@ h2 {
   margin: 0;
   font-weight: 700;
 }
+
 .main-form {
   background-color: #455A64;
   border-collapse: collapse;
@@ -56,7 +57,7 @@ input[type="text"], input[type="url"] {
 }
 
 input::placeholder {
-color: #C5C7C9; 
+  color: #C5C7C9; 
 }
 
 .enter {
@@ -117,8 +118,8 @@ color: #C5C7C9;
 }
 
 .read {
-   color: #F05A28;
-   padding: 0;
+  color: #F05A28;
+  padding: 0;
   background: none;
   border-style: none;
   font-size: 100%;
@@ -151,15 +152,70 @@ color: #C5C7C9;
 
 }
 
-@media (max-width: 480px){
+.bookmark-counter-text {
+  color: #ffffff;
+  display: inline-block;
+  text-align: right;
+  font-weight: 300;
+  font-size: 100%;
+  margin: auto;
+  padding-right: 1%;
+}
 
-  .bookmark-list, .main-form {
+.bookmark-counter{
+  color: #FFC107;
+  font-size: 300%;
+}
+
+.read-unread-text{
+  color: #ffffff;
+  display: inline-block;
+  font-size: 100%;
+  font-weight: 300;
+  text-align: left;
+  margin: auto;
+  padding-left: 10%;
+}
+.read-counter, .unread-counter{
+  color: #FFC107;
+}
+
+@media (max-width: 480px) {
+
+  .bookmark-list, .main-form{
     display: block;
     position: relative;
     width: 100%;
     right: 0;
     left: 0;
   }
-  
+  .read-unread-text{
+    text-align: center;
+    padding: 0;
+    display: block;
 
+  }
+  .bookmark-counter-text{
+    text-align: center;
+    padding: 0;
+  }
+  .counter{
+    margin: auto;
+    max-width: 90%;
+  }
+  h1 {
+    font-size: 200%;
+  }
+
+ /* img{
+    width: 10%;
+    height: auto;
+  }
+  .main-form{
+    max-height: 50%;
+  }
+  .title-form{
+    padding-top: 3%;
+  }*/
 }
+
