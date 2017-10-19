@@ -75,6 +75,21 @@ color: #C5C7C9;
   background-color: #FFD773;
 }
 
+.url:hover{
+  ext-decoration: underline;
+  text-decoration-color: #FFC107;
+}
+
+.unread:hover{
+  ext-decoration: underline;
+  text-decoration-color: #FFC107;
+}
+
+.delete:hover {
+  ext-decoration: underline;
+  text-decoration-color: #FFC107;
+}
+
 .bookmark-list {
   background-color: #CFD8DC;
   border-collapse: collapse;
@@ -142,14 +157,14 @@ color: #C5C7C9;
   color: #607D8B;
 }
 
-.url:link {
+.url {
   font-size: 130%;
   font-weight: 400;
   text-decoration: underline;
   text-decoration-color: #F2F4F4;
   color: #607D8B;
-
 }
+
 
 @media (max-width: 480px){
 
