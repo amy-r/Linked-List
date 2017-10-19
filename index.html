@@ -3,37 +3,33 @@
 <head>
   <title>Linked List</title>
   <link rel="stylesheet" type="text/css" href="./stylesheet.css" >
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
   <section class="main-form">
     <article class="title-form">
-     <h1> Linked <img src="./images/linked-list-logo.svg"/> List 
-     </h1>
+     <div class='logo'><h1> Linked <img src="./images/linked-list-logo.svg"/> List 
+        </h1>
+     </div>
      <form>
       <input class= "website-title" type="text" name="Website Title" label="Website Title" placeholder=" Website Title" required="true">
       <input class= "website-url" type="url" name="Website URL" label="Website URL" placeholder=" Website URL" required="true">
       <input class= "enter" type="submit" name="Enter" label="Enter" value="Enter" disabled>
      </form>
-     <p> Bookmark Counter
-     <span class='bookmark-counter'>0</span>
-     Read Links
-     <span class='read-counter'>0</span>
-     Unread Links
-     <span class='unread-counter'>0</span>
-   </p>
+        <div class=".counter">
+           <p class ='bookmark-counter-text'> BOOKMARK<br>COUNTER</p>
+           <span class='bookmark-counter'>0</span>
+           <p class="read-unread-text">
+           <span class='read-counter'>0</span>
+           READ LINKS<br>
+           <span class='unread-counter'>0</span>
+           UNREAD LINKS
+           </p>
+        </div>
     </article>
   </section>
   <section class="bookmark-list">
-   <!--  <article class="bookmark-card"> -->
-      <!-- <h2 class="website-title">The Website Title</h2>
-      <hr>
-      <p class="url">www.thewebsiteurl.com</p>
-      <hr>
-      <button class="read"></button>
-      <button class="delete"></button> -->
-    <!-- </article> -->
   </section>
 <script type="text/javascript" src="script.js"> </script>
 </body>
